@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;  
+    max-width: 100%; 
+}
+
+.header {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: orange;
+    font-size: large;
+}
+
+.header h1 {
+    font-family:monospace;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+    margin-left: 30%;
+    margin-top: 10px;
+    padding-bottom: 35px;
+}
+
+.header li {
+    text-align: center;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+
+a:visited {
+    color: black;
+}
+
+a:hover { 
+    font-weight: none;
+    box-shadow: inset 400px 0 0 0 #eba102cf;     
+}
+
+a {
+    transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.hero {
+    background-image: url('images/pexels-ella-olsson-1640774.jpg');
+    background-size: cover;
+    width: 99vw;
+    height: 100%;
+}
+
+.insetDiv {
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.insetDiv h2 {
+    font-size: 40px;
+    background-color: #F5F5F5;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 10%;
+}
+
+label {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+#signup input {
+    min-height: 75%;
+}
+
+button {
+    height: 60px;
+    width: 10%;
+    margin-left: 45%;
+    font-weight: bold;
+    box-shadow: inset 400px 0 0 0 rgb(19, 202, 31);  
+}
+
+button:hover {
+    color: greenyellow;
+}
+
+.promoArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    gap: 20px;
+    font-size: 35px;
+}
+
+.promoArea h1 {
+    font-style: italic;
+}
+
+.descBox {
+    text-align: center;
+}
+
+.descBox > img {
+    height: 40%; 
+}
+
+.foodList {
+    text-align: center;
+    font-style: italic;
+    background-color: #F5F5F5;
+    padding-bottom: 25px;
+}
+
+.foodList h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.foodListHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+ 
+.foodListBox li {
+    list-style: none;
+    font-size: 30px;
+    width: 450px;
+}
+
+.foodList img {
+    height: 420px;
+}
+
+.foodListBox p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.dessertArea {
+    background-color: #F5F5F5;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 500px;
+}
+
+.dessertArea h1 {
+    font-style: italic;
+}
+
+.dessertInfo {
+    margin-left: 15%;
+    padding-top: 20%;
+    text-align: center;
+    font-size: 25px; 
+}
+
+.dessertPhoto > img {
+    width: 60%;
+    max-height: 500px;
+    object-fit: cover; 
+    margin-left: 15%;
+}
+
+.mealheader{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.mealSelection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px 90px 0 90px;
+    gap: 10px;
+    place-items: center;
+    margin-bottom: 70px;
+}
+
+.mealOption > img {
+    width: 100%;
+    height: 30%;
+}
+
+.mealInfo > h1 {
+    text-align: center;
+}
+
+.mealInfo > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.wineArea {
+    background-color: white;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 500px;
+}
+
+.wineArea h1 {
+    font-style: italic;
+}
+
+.wineInfo {
+    padding-top: 20%;
+    text-align: center;
+    font-size: 25px; 
+    margin-right: 15%;
+}
+
+.winePhoto > img {
+    width: 60%;
+    max-height: 500px;
+    object-fit: cover; 
+    margin-left: 25%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+    padding: 30px;
+    gap: 10px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer li {
+    list-style: none;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 200px) {
+    a:hover { 
+        box-shadow: inset 400px 0 400px 0 #eba102cf;  
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .header ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero {
+        height: 100%;
+    }
+    .promoArea {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    .foodListHolder {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+    .dessertArea img {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .mealSelection {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .wineArea img{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .promoArea {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  
+}
+
+@media screen and (min-width: 400px) and (max-width: 1279px) {
+    .descBox > img {
+        height: 27%; 
+    }
+    .foodListHolder {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    .hero {
+        width: 110vw;
+    }  
+}
