@@ -1,5 +1,101 @@
-* {
-    background-color: lightblue;
-    text-align: center;
-    font-size: x-large;
+*{
+    margin: 0;
+    padding: 0;  
+    max-width: 100%; 
 }
+.mainimg {
+    width: 65%;
+    display: grid;
+    place-items: center;
+    padding-left: 18%;
+}
+
+
+/* Nav and Intro */
+
+.nav {
+    display: flex;
+    align-items: center;
+    background-color: rgb(98, 153, 135);
+    font-size: 30px;
+    text-decoration: none;  
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin-left: 40%;
+    text-decoration: none;  
+}
+
+.nav li {
+    text-decoration: none;
+    color: white; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.nav h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover { 
+    font-weight: none;
+    box-shadow: inset 400px 0 0 0 rgb(109, 94, 181);     
+}
+
+a {
+    transition: color .4s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+/* About Me Section and Intro */
+.intro {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.intro li {
+    display: flex;
+    line-height: 50px;
+    list-style: none;
+    font-size: 25px;
+}
+
+.myphoto {
+    max-width: 15%;
+}
+
+.intro p > img {
+    width: 30px;
+    height: 30px;
+}
+
+.project {
+    display: flex;
+}
+
+.projectimage {
+    max-width: 20%;
+}
+
+.projectinfo ul {
+    display: flex;
+    list-style: none;
+    width: 25%;
+}
+
+
+
+
+
